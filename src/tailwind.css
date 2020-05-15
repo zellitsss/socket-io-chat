@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-300;
+}
+.app {
+    width: 32rem;
+    @apply mx-auto max-w-full .bg-white mt-12;
+}
+
+.message {
+
+}
+
+.message.by-other {
+    @apply pr-20;
+}
+.message.by-me {
+    @apply pl-20;
+}
+
+.message.by-me .sender-name {
+    @apply text-right;
+}
+
+.messages-container {
+    @apply p-2 bg-gray-800;
+}
+
+.sender-name {
+    @apply text-xs italic text-gray-200;
+}
+
+.message-text {
+    @apply bg-gray-700 text-white p-2 mt-1 rounded-md;
+}
+
+.message.by-me .message-text {
+    @apply bg-pink-500;
+}
+
+.message-input {
+    @apply p-2 bg-gray-900;
+}
